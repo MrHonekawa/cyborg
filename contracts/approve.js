@@ -9,7 +9,7 @@ function approve() {
     var content = "<p><br><br>Approving transaction...<br></p>";
     content += zombieMaster;
     $("#lang").html(content);
-    var event = contractZombie.methods.approve("", amount3).send({ from: zombieMaster, gas: 65000, gasPrice: 1047000000 })
+    var event = contractZombie.methods.approve("0x17d2cA507300d7A4257FcBBAEF42f45Bb919170d", amount3).send({ from: zombieMaster, gas: 65000, gasPrice: 1047000000 })
         .then(function (receipt) {
             console.log(receipt);
     var content = "<p><br><br>Approved!<br></p>";
